@@ -81,16 +81,17 @@ $('button').click(function () {
 
   if (this.innerText == questionsArray[questionIndex][2]) {
 
-       console.log("Correct answer")
        counter++;//increment correct question
        questionIndex++;//move on to the next question by incrementing the index
        renderQuestion();//generate question and answer choices
 
+  }
 
-  } else {
+  else {
       console.log("Wrong answer! move on to the next question");
       questionIndex++;
       renderQuestion();
+
 
 }
 
