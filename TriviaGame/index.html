@@ -5,98 +5,63 @@
     <title>Trivia Game</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+
 
   </head>
   <body>
 
+<div class="container">
 
-    <div id="quiz">
-      <h1>Trivia Questions</h1>
-      <p id="question"></p>
+<div class="col-sm-8 game">
+
+    <div class="panel panel-default">
+      <div class="panel-heading">Pixar Trivia!</div>
+      <div class="panel-body">
+
+    <h1><a class="startGame" href="#">Start Game!</a></h1>
+    <div id="quiz" class="no-show">
+
+      <h2 id="question"></h2>
+
+
+      <div class="row">
+
 
       <div class="buttons">
-        <button class="btm" id="btn0"><span id="choice0"></span></button>
-        <button class="btm" id="btn1"><span id="choice1"></span></button>
-        <button class="btm" id="btn2"><span id="choice2"></span></button>
-        <button class="btm" id="btn3"><span id="choice3"></span></button>
+        <div class="sm-col-6">
+
+        <button type="button" class="btn btn-warning"><span id="choice0"></span></button>
+        </div>
+        <div class="sm-col-6">
+        <button type="button" class="btn btn-warning"><span id="choice1"></span></button>
+        </div>
+        <div class="sm-col-6">
+        <button type="button" class="btn btn-warning"><span id="choice2"></span></button>
+        </div>
+        <div class="sm-col-6">
+        <button type="button" class="btn btn-warning"><span id="choice3"></span></button>
+        </div>
       </div>
+</div>
 
-       <p id="progress">
-         1 of 4
-      </p>
 
+
+
+      <span id="count"></span>
+
+
+
+
+</div>
     </div>
-
-
-    <script>
-
-    // The object questions for my trivia game
-    var randomQuestion = {
-      questionOne: ["What is the name of my first pet?", ["bennie", "max", "doli", "champion"], "bennie"],
-      questionTwo: ["What is the name of my second pet?", ["bennie", "max", "doli", "champion"], "bennie"],
-      questionThree: ["What is the name of my third pet?", ["bennie", "max", "doli", "champion"], "bennie"],
-      questionFour: ["What is the name of my fourth pet?", ["bennie", "max", "doli", "champion"], "bennie"],
-
-    };
-
-    var score = 0;
-
-    var questionCounter = 0;
-
-    var questionIndex = 0;
-
-    var questionsArray = [randomQuestion.questionOne, randomQuestion.questionTwo, randomQuestion.questionThree, randomQuestion.questionFour];
-
-    function renderQuestion() {
-      // If there are still more questions, render the next one.
-      if (questionIndex <= (questionsArray.length - 1)) {
-        document.querySelector("#question").innerHTML = questionsArray[questionIndex][0];
-        document.querySelector("#choice0").innerHTML = questionsArray[questionIndex][1][0];
-        document.querySelector("#choice1").innerHTML = questionsArray[questionIndex][1][1];
-        document.querySelector("#choice2").innerHTML = questionsArray[questionIndex][1][2];
-        document.querySelector("#choice3").innerHTML = questionsArray[questionIndex][1][3];
-      }
-      // If there aren't, render the end game screen.
-      else {
-        document.querySelector("#question").innerHTML = "Game Over!";
-        document.querySelector("#progress").innerHTML = "Final Score: " + questionCounter + " out of " + questionsArray.length;
-      }
-    }
-
-    renderQuestion();
-
-    $('button').click(function () {
-
-      if (questionIndex === questionsArray.length) {
-        return;
-      }
-
-      if (this.innerText == questionsArray[questionIndex][2]) {
-     alert("Correct you picked bennie!")
-     questionCounter++;
-    } else {
-    alert("Wrong try again!");
-
-    questionIndex++;
-    renderQuestion();
-    }
-
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-    </script>
-
+    <p id="gameover"></p>
+    <p id="progress"></p>
+  </div>
+  </div>
+</div>
+<script type="text/javascript" src="javascript/app.js"></script>
 
   </body>
 </html>
