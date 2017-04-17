@@ -1,0 +1,17 @@
+
+body {
+background: url(../images/water-bg.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+div,
+form,
+input {
+margin: 10px;
+}
+.row {
+  max-width: 85rem;}
+
+.button {margin-left:10px;}

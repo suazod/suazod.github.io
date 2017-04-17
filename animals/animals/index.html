@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>GifTastic</title>
+  <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation-flex.css" /-->
+  <link rel="stylesheet" href="css/styles.css" />
+
+
+
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Animal Gifs</h1>
+
+    <!-- Rendered Buttons will get Dumped Here  -->
+    <div id="buttons-view"></div>
+
+    <!-- animals will Get Dumped Dere -->
+
+    <div id="gifs-appear-here" class="row"></div>
+
+    <form id="animals-form">
+      <label for="animal-input">Add animal</label>
+      <input type="text" id="animal-input"><br>
+
+      <!-- Button triggers new movie to be added -->
+      <input class="button" id="add-animals" type="submit" value="Add Animal">
+    </form>
+
+
+
+  </div>
+  <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+
+    <!-- AJAX -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
