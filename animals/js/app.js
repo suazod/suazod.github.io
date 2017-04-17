@@ -1,4 +1,4 @@
-// Initial array of movies
+// Initial array of animals
 var topics = ["Shark", "Octopus", "Whale", "Sea Lion", "Giant Squid", "Jellyfish", "King Crab"];
 
 function displayAnimals() {
