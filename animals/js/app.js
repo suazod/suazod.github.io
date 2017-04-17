@@ -1,5 +1,5 @@
 // Initial array of movies
-var topics = ["Lion", "Tiger", "Elephant", "Giraffe", "skunk"];
+var topics = ["Shark", "Octopus", "Whale", "Sea Lion", "Giant Squid", "Jellyfish", "King Crab"];
 
 function displayAnimals() {
 
@@ -34,13 +34,13 @@ function displayAnimals() {
       animalImage.attr("data-still", results[i].images.fixed_height_still.url);
       animalImage.attr("data-animate", results[i].images.fixed_height.url);
       animalImage.addClass("gif-action");
-      animalDiv.addClass("large-2 columns");
+      animalDiv.addClass("large-3 columns");
 
 
 
       // Appending the paragraph and image tag to the animalDiv
-      animalDiv.append(p);
       animalDiv.append(animalImage);
+      animalDiv.append(p);
 
 
       // Prepending the animalDiv to the HTML page in the "#gifs-appear-here" div
@@ -85,7 +85,7 @@ function renderButtons() {
     // Adding a data-attribute
     a.attr("data-animal", topics[i]);
 
-    a.addClass("hollow button");
+    a.addClass("small-12 columns button warning");
 
     // Providing the initial button text
     a.text(topics[i]);

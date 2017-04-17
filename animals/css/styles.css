@@ -1,17 +1,55 @@
 
+
+
 body {
-background: url(../images/water-bg.jpg) no-repeat center center fixed;
+background: url(../images/bg-water-02.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 }
-div,
-form,
-input {
-margin: 10px;
-}
-.row {
-  max-width: 85rem;}
 
-.button {margin-left:10px;}
+#buttons-view {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+h1 {
+  font-family: 'Sigmar One', cursive;
+  margin:0 auto;;
+  color:#fff;
+  font-size: 82px;
+}
+
+.entry {
+  display: inherit;
+  margin: auto;
+}
+
+.button.warning {
+    background-color: #ffae00;
+    color: #005983;
+    width: 12%;
+    text-transform: uppercase;
+    border: 1px solid #d68500;
+}
+
+img {
+  border: 3px solid #fff;
+-webkit-box-shadow: 0 8px 6px -6px black;
+-moz-box-shadow: 0 8px 6px -6px black;
+box-shadow: 0 8px 6px -6px black;
+cursor: pointer;
+}
+
+#gifs-appear-here p {
+
+  color: white;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 12px;
+margin-top: 5px;
+margin-left: 5px;
+}
+
+#buttons-view button {margin-left:10px;}
