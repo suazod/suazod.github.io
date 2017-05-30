@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
+	<meta charset="UTF-8">
 	<title>Crystal Collectors</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
 </head>
 <body>
 
 <div id = "wrap">
 
-<h1><span>Crystal Collectors!<span></h1>
+<h1>Crystal Collectors!</h1>
 
 	<div id="instructions-list">
 		<p> You will be given a random number at the start of the game.</p>
@@ -19,23 +21,26 @@
 
 	<div class = "container">
 		<div id="guessingNumber">
-			<h2>Number to Guess: <span class="value"></span></h2>
+			<h2>Number to Guess: <span id="mainNumber"></span></h2>
 		</div>
 
 		<div id="scoreboard">
-			<h3><span id="status"></span></h3>
-			<h3>Wins: <span id="win"></span></h3>
-			<h3>Losses: <span id="loss"></span> </h3>
+			<h2>Current Score: <span id="currentNumber"></span></h2>
 		</div>
 	</div>
 
 
-	<div id="crystals"></div>
-
-	<div id ="totalScore">
-		<h2 id = "total">Your Total Score is: <span id ="yourScore">0</span></h2>
-
+	<div id="crystals">
+		<img class="hover-effect" src="assets/images/blue.png" alt="crystal" id="blue">
+		<img class="hover-effect" src="assets/images/green.png" alt="crystal" id="green">
+		<img class="hover-effect" src="assets/images/red.png" alt="crystal" id="red">
+		<img class="hover-effect" src="assets/images/yellow.png" alt="crystal" id="yellow">
 	</div>
+
+	<div id="scores">
+		<h3>Wins: <span id="win"></span></h3>
+	<h3>Losses: <span id="loss"></span> </h3>
+  </div>
 
 </div>
 
@@ -43,7 +48,6 @@
 <!-- adding jQuery -->
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-
 <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 
